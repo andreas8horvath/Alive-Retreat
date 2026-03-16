@@ -66,9 +66,9 @@ export default function OceanRetreat() {
   };
 
   const transforms = [
-    { title: "Turn Sensitivity Into Strength", desc: "Stop managing your emotions as symptoms. Learn somatic practices that transform your sensitivity into your greatest creative and relational resource." },
-    { title: "Restore Your Vital Energy", desc: "Discover where your energy is leaking — and seal those leaks. Leave with a sustainable personal practice that fits into real life, not an idealized one." },
-    { title: "Reconnect With Authentic Joy", desc: "Not manufactured positivity — the quiet, deep joy of being in your body, present to beauty, connected to other women who truly see you." },
+    { title: "Turn Sensitivity Into Strength", desc: "Learn somatic practices that transform your sensitivity into your greatest creative and relational resource." },
+    { title: "Restore Your Vital Energy", desc: "Discover how your vital energy moved and can be increased . Leave with a sustainable personal practice that fits into real life." },
+    { title: "Reconnect With Authentic Joy", desc: "The quiet, deep joy of being in your body, present to beauty, connected to other women who truly see you." },
     { title: "Calm the Stress Loop", desc: "Learn nervous system regulation tools you can use anywhere. Breathwork, movement, and meditation techniques clinically effective for anxiety and burnout." },
     { title: "Feel Alive in Your Body Again", desc: "Water healing, somatic movement, ceremony by the ocean — experiences that return you to the physical pleasure of simply existing, unscheduled and unhurried." },
     { title: "One Month of Continued Support", desc: "Integration matters. A private group supports you for a full month after the retreat, so the changes you make in Les Landes become permanent." }
@@ -78,12 +78,12 @@ export default function OceanRetreat() {
     { icon: "🧘", title: "Meditation", desc: "Morning stillness practices anchored in breath and body awareness. No prior experience needed." },
     { icon: "🌊", title: "Somatic Practices", desc: "Body-based movement to discharge stored tension and reconnect with sensation and presence." },
     { icon: "🎶", title: "Chanting", desc: "Vocal resonance practices that unlock the chest, quiet the mind, and activate collective energy." },
-    { icon: "💧", title: "Water Healing", desc: "Aquatic therapy in a private spa — a deeply somatic, profoundly restoring experience." },
+    { icon: "💧", title: "Oceane flow ceremony", desc: "A unique life changing experience, from deep relaxation in the water." },
     { icon: "🌬️", title: "Breathwork", desc: "Transformational breathing sessions to shift your state, release old patterns, and access clarity." },
     { icon: "✨", title: "Energy Healing", desc: "Collective healing circles working with subtle body energy to restore flow and vitality." },
     { icon: "🫂", title: "Sharing Circles", desc: "Held, witnessed, and truly heard. Women sharing without fixing, advising, or performing." },
-    { icon: "🍫", title: "Cacao Ceremony", desc: "Heart-opening ceremonial cacao in a sacred container. A threshold between worlds." },
-    { icon: "🌅", title: "Ceremony by the Ocean", desc: "As the Atlantic light fades, a closing ritual by the sea. Marking who you were, who you are now." }
+    { icon: "🍫", title: "Cacao Ceremony", desc: "Heart-opening ceremonial cacao in a sacred container." },
+    { icon: "🌅", title: "Ceremony by the ocean", desc: "As the Atlantic light fades, a closing ritual by the sea. a moment of presence, of prayer, of connection to the elements." }
   ];
 
   return (
@@ -116,7 +116,6 @@ export default function OceanRetreat() {
           </div>
           <div className="hero-cta-group">
             <a href="#booking" className="btn-primary">Reserve My Place</a>
-            <a href="#experience" className="btn-ghost">What Happens There →</a>
           </div>
         </div>
         <div className="hero-scroll-hint"><div className="scroll-line"></div><span>Scroll</span></div>
@@ -138,7 +137,7 @@ export default function OceanRetreat() {
               <p>ALIVE is a sacred pause designed for women like you: to reconnect with your body, restore your vital energy, and return home with tools that sustain you long after the retreat ends.</p>
               <p>Five nights in Les Landes to remember what it feels like to be truly, joyfully alive.</p>
               <div className="resonance-check">
-                <div className="check-item"><div className="check-dot"></div><span>Your sensitivity is a profound gift — learn to channel it as a strength</span></div>
+                <div className="check-item"><div className="check-dot"></div><span>Your sensitivity is a profound gift</span></div>
                 <div className="check-item"><div className="check-dot"></div><span>Real tools for calm, clarity and sustained energy in everyday life</span></div>
                 <div className="check-item"><div className="check-dot"></div><span>Deep connection with women who truly see and hear you</span></div>
                 <div className="check-item"><div className="check-dot"></div><span>An embodied transformation that continues long after you return home</span></div>
@@ -151,7 +150,7 @@ export default function OceanRetreat() {
       {/* PROMISE */}
       <section className="promise">
         <div className="container--narrow animate">
-          <span className="section-eyebrow" style={{color: 'white'}}>The transformation</span>
+          <span className="section-eyebrow" style={{color: 'var(--terracotta-light)'}}>The transformation</span>
           <h2>Leave Renewed.<br/><em>Grounded. Equipped.</em></h2>
           <p className="promise-lead">Not just rested — genuinely changed. You&apos;ll leave with a new relationship with your body, your emotions, and your energy. And you&apos;ll have real tools to sustain it at home.</p>
         </div>
@@ -284,19 +283,18 @@ export default function OceanRetreat() {
           <div className="guides-grid animate">
             <div className="guide-card">
               <Image className="guide-avatar" src="https://res.cloudinary.com/dt806m3nm/image/upload/v1773290880/carole_x83sqc.jpg" alt="Carole" width={300} height={300} />
-              <div>
-                <div className="guide-name">Carole – &apos;The Magician in Sneakers&apos;</div>
-                <div className="guide-role">Multidimensional Therapist and Founder of CaroleAnna, Selfcare Paradise, and Odyssée Alchimique.</div>
-                <p className="guide-bio">Her magic lies in blending the visible and invisible to help you love yourself and your body, dare to shine, and fully live. Her expertise combines movement, energetic releases (healing, massage, soul retrieval, sound therapy) and mentoring with deep self-knowledge tools. A unique journey toward profound metamorphosis — healing life wounds, transforming your relationship to your body, and embracing neuro-diversity for a sovereign and serene life.</p>
-              </div>
+              <div className="guide-role">Multidimensional Therapist and Founder of CaroleAnna, Selfcare Paradise, and Odyssée Alchimique.</div>
+              <p className="guide-bio-text">Carole combines movement, energetic (healing, massage, soul retrieval, sound therapy) and mentoring with deep self-knowledge tools. A unique journey toward profound metamorphosis – healing life wounds, transforming your relationship to your body, and embracing neuro-diversity for a sovereign and serene life.</p>
+              <div className="guide-magic-title">Her magic</div>
+              <p className="guide-magic-text">Her magic lies in blending the visible and invisible to help you love yourself and your body, dare to shine, and fully live.</p>
             </div>
             <div className="guide-card">
               <Image className="guide-avatar" src="https://res.cloudinary.com/dt806m3nm/image/upload/v1773290879/Ocean_puvzg9.jpg" alt="Océane" width={300} height={300} />
-              <div>
-                <div className="guide-name">Océane</div>
-                <div className="guide-role">Holistic Therapist and Founder of Oceane Therapy & Oceane Flow.</div>
-                <p className="guide-bio">Océane supports nervous system regulation through a body-based and energetic approach blending yoga, embodiment, breathwork, Thai massage, Reiki, and sound healing. A specialist in aquatic therapy, she created Oceane Flow — a unique water experience inviting deep surrender and a return to self. Her magic: her softness, yin energy, and nurturing presence create a safe space where you can fully relax, reconnect, and be authentically yourself.</p>
-              </div>
+              <div className="guide-role">Holistic Therapist and Founder of Oceane Therapy & Oceane Flow</div>
+              <p className="guide-bio-text">Océane supports nervous system regulation through a body-based and energetic approach blending yoga, embodiment, breathwork, Thai massage, Reiki, and sound healing.</p>
+              <p className="guide-bio-text">A specialist in aquatic therapy, she created Oceane Flow – a unique water therapy inviting deep relaxation and connection to self.</p>
+              <div className="guide-magic-title">Her magic</div>
+              <p className="guide-magic-text">Her softness, yin energy, and nurturing presence that create a safe space where you can fully relax, reconnect, and be authentically yourself.</p>
             </div>
           </div>
         </div>
@@ -329,14 +327,14 @@ export default function OceanRetreat() {
               <div className="logistics-block">
                 <h3>What to Expect</h3>
                 <div className="logistics-items">
-                  <div className="logistics-item">Intimate group of maximum 12 women —</div>
+                  <div className="logistics-item">Intimate group of maximum 12 women</div>
                   <div className="logistics-item">French Atlantic coast: pine forest, dunes, ocean air</div>
                   <div className="logistics-item">Flexible daily structure</div>
                   <div className="logistics-item">Vegetarian food, lovingly prepared.</div>
                   <div className="logistics-item">Comfortable, private room with natural light</div>
                   <div className="logistics-item">Language: French and English</div>
                   <div className="logistics-item">no spiritual background required</div>
-                  <div className="logistics-item">accessible from Bordeaux — approximately 90 min by car ( we organized a shared transfer)</div>
+                  <div className="logistics-item">accessible from Bordeaux — approximately 90 min by car</div>
                 </div>
               </div>
             </div>
@@ -345,11 +343,40 @@ export default function OceanRetreat() {
             <div className="not-included-box">
               <p><strong>Not included:</strong> Travel to Les Landes, optional individual sessions (massage, coaching — available to add on).</p>
             </div>
-            <div className="investment-card">
-              <h3 className="investment-title">Your Investment</h3>
-              <div className="investment-amount">€2,497</div>
-              <p className="investment-desc">Full retreat including accommodation, all meals and all group sessions. Payment plans available.</p>
-              <a href="https://yogasearcher.com/en/pages/" target="_blank" rel="noreferrer" className="investment-btn">RESERVE YOUR PLACE →</a>
+            <div className="investment-cards-grid">
+              <div className="investment-card early-bird">
+                <div className="early-bird-badge">Limited Spots</div>
+                <h3 className="investment-title">Early Bird</h3>
+                <p className="urgency-text">Only 6 spots available until April 6th</p>
+                <div className="price-options">
+                  <div className="price-option">
+                    <span className="room-type">Double Room</span>
+                    <span className="investment-amount">€1,999</span>
+                  </div>
+                  <div className="price-option">
+                    <span className="room-type">Single Room</span>
+                    <span className="investment-amount">€2,399</span>
+                  </div>
+                </div>
+                <p className="investment-desc">Full retreat including accommodation, all meals and all group sessions. Payment plans available.</p>
+                <a href="#booking" className="investment-btn">RESERVE YOUR PLACE</a>
+              </div>
+              <div className="investment-card regular">
+                <h3 className="investment-title">Regular</h3>
+                <p className="urgency-text empty-urgency">&nbsp;</p>
+                <div className="price-options">
+                  <div className="price-option">
+                    <span className="room-type">Double Room</span>
+                    <span className="investment-amount">€2,277</span>
+                  </div>
+                  <div className="price-option">
+                    <span className="room-type">Single Room</span>
+                    <span className="investment-amount">€2,677</span>
+                  </div>
+                </div>
+                <p className="investment-desc">Full retreat including accommodation, all meals and all group sessions. Payment plans available.</p>
+                <a href="#booking" className="investment-btn">RESERVE YOUR PLACE</a>
+              </div>
             </div>
           </div>
         </div>
