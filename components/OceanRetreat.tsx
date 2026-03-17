@@ -3,10 +3,13 @@
 import React, { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 import Image from 'next/image';
+import QuestionForm from './QuestionForm';
+import BookingModal from './BookingModal';
 
 export default function OceanRetreat() {
   const [showCookieConsent, setShowCookieConsent] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   useEffect(() => {
     const init = () => {
@@ -93,7 +96,7 @@ export default function OceanRetreat() {
           <a href="#" className="nav-logo">
             <Image src="https://res.cloudinary.com/dt806m3nm/image/upload/v1773290879/logo_ypajgk.png" alt="ALIVE" width={120} height={40} />
           </a>
-          <a href="#booking" className="nav-cta">
+          <a href="#book" onClick={(e) => { e.preventDefault(); setIsBookingModalOpen(true); }} className="nav-cta">
             <span className="mobile-text">Book Now</span>
             <span className="desktop-text">Reserve Your Spot</span>
           </a>
@@ -115,7 +118,7 @@ export default function OceanRetreat() {
             <div className="hero-meta-item"><span className="hero-meta-label">When</span><span className="hero-meta-value">29 May – 3 June</span></div>
           </div>
           <div className="hero-cta-group">
-            <a href="#booking" className="btn-primary">Reserve My Place</a>
+            <a href="#book" onClick={(e) => { e.preventDefault(); setIsBookingModalOpen(true); }} className="btn-primary">Reserve My Place</a>
           </div>
         </div>
         <div className="hero-scroll-hint"><div className="scroll-line"></div><span>Scroll</span></div>
@@ -301,7 +304,7 @@ export default function OceanRetreat() {
       </section>
 
       {/* LOGISTICS */}
-      <section className="logistics" id="booking">
+      <section className="logistics" id="logistics">
         <div className="container">
           <div className="logistics-header animate">
             <span className="section-eyebrow">Practical Details</span>
@@ -359,7 +362,7 @@ export default function OceanRetreat() {
                   </div>
                 </div>
                 <p className="investment-desc">Full retreat including accommodation, all meals and all group sessions. Payment plans available.</p>
-                <a href="#booking" className="investment-btn">RESERVE YOUR PLACE</a>
+                <a href="#book" onClick={(e) => { e.preventDefault(); setIsBookingModalOpen(true); }} className="investment-btn">RESERVE YOUR PLACE</a>
               </div>
               <div className="investment-card regular">
                 <h3 className="investment-title">Regular</h3>
@@ -375,7 +378,7 @@ export default function OceanRetreat() {
                   </div>
                 </div>
                 <p className="investment-desc">Full retreat including accommodation, all meals and all group sessions. Payment plans available.</p>
-                <a href="#booking" className="investment-btn">RESERVE YOUR PLACE</a>
+                <a href="#book" onClick={(e) => { e.preventDefault(); setIsBookingModalOpen(true); }} className="investment-btn">RESERVE YOUR PLACE</a>
               </div>
             </div>
           </div>
@@ -421,20 +424,24 @@ export default function OceanRetreat() {
           <p>Five nights in Les Landes is the beginning of a lasting transformation. You&apos;ll leave with your energy restored, your body grounded, and a circle of women who truly see you.</p>
           <div className="final-urgency">12 WOMEN ONLY · NEXT RETREAT: SUMMER 2026</div>
           <div className="mt-8">
-            <a href="https://yogasearcher.com/en/pages/" target="_blank" rel="noreferrer" className="btn-primary">RESERVE MY PLACE NOW</a>
+            <a href="#book" onClick={(e) => { e.preventDefault(); setIsBookingModalOpen(true); }} className="btn-primary">RESERVE MY PLACE NOW</a>
           </div>
         </div>
       </section>
+
+      <QuestionForm />
 
       <footer>
         <Image src="https://res.cloudinary.com/dt806m3nm/image/upload/v1773290879/logo_ypajgk.png" alt="ALIVE" width={240} height={140} className="footer-logo" />
         <div className="footer-links">
           <a href="https://yogasearcher.com" target="_blank" rel="noreferrer">YOGASEARCHER.COM</a>
           <a href="#experience">THE EXPERIENCE</a>
-          <a href="#booking">BOOK</a>
+          <a href="#book" onClick={(e) => { e.preventDefault(); setIsBookingModalOpen(true); }}>BOOK</a>
         </div>
         <p className="footer-copy">© 2026 ALIVE Retreat · Les Landes, France</p>
       </footer>
+
+      <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
 
       {/* Gallery Modal */}
       {selectedImage && (

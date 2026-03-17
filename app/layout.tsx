@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'ALIVE Retreat | Les Landes, France',
+  title: "ALIVE - Women's Retreat",
   description: 'A unique transformational retreat for women in the pine forests and Atlantic coast of Les Landes.',
 };
 
