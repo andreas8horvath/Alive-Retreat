@@ -37,7 +37,7 @@ export default function BookingModal({ isOpen, onClose }: { isOpen: boolean, onC
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
       <div className="relative w-full max-w-2xl bg-[var(--cream)] rounded-2xl shadow-2xl border border-[var(--gold)]/20 my-8">
         <button onClick={onClose} className="absolute top-4 right-4 text-[var(--text-light)] hover:text-[var(--text-dark)] transition-colors z-10 p-2">
           <X size={24} />
